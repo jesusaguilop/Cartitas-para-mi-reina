@@ -14,6 +14,7 @@ import novia6 from "@/assets/novia-6.png";
 import novia7 from "@/assets/novia-7.png";
 import novia8 from "@/assets/novia-8.png";
 import juntos from "@/assets/juntos.jpeg";
+import noviaVF from "@/assets/novia-vf.jpg";
 
 export const Route = createFileRoute("/cartas")({
   component: CartasPage,
@@ -208,7 +209,13 @@ function CartasPage() {
                     <div
                       className="w-full h-full"
                       style={{
-                        backgroundImage: `url(${openCarta === 9 ? juntos : fotos[openCarta % fotos.length]})`,
+                        backgroundImage: `url(${
+                          openCarta === 9
+                            ? juntos
+                            : openCarta === 4 || openCarta === 5
+                            ? noviaVF
+                            : fotos[openCarta % fotos.length]
+                        })`,
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                         backgroundRepeat: "no-repeat",
