@@ -163,9 +163,6 @@ function devServerFnErrorLogger() {
 export default defineConfig(({ command, mode }) => {
   // Use Cloudflare Workers plugin only when explicitly building for Cloudflare.
   // Disable this in Vercel or normal static builds to avoid worker-only output.
-  const useCloudflare =
-    command === "build" && process.env.CLOUDFLARE_BUILD === "true";
-
   const env = loadEnv(mode, process.cwd(), "VITE_");
   const envDefine: Record<string, string> = {};
   for (const [key, value] of Object.entries(env)) {
@@ -191,8 +188,6 @@ export default defineConfig(({ command, mode }) => {
       }),
       devClientErrorLogger(),
       devServerFnErrorLogger(),
-      ...(useCloudflare ? [cloudflare({ viteEnvironment: { name: "ssr" } })] : []),
-      tanstackStart(),
       viteReact(),
       mode === "development" && componentTagger(),
     ].filter(Boolean),
