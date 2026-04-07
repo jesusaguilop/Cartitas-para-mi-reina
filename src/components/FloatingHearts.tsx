@@ -37,7 +37,7 @@ export function FloatingHearts() {
     setParticles(initial);
 
     const interval = setInterval(() => {
-      setParticles((prev) => {
+      setParticles((prev: Particle[]) => {
         const next = [...prev.slice(-20), createParticle()];
         return next;
       });
@@ -49,7 +49,7 @@ export function FloatingHearts() {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       <AnimatePresence>
-        {particles.map((p) => (
+        {particles.map((p: Particle) => (
           <motion.div
             key={p.id}
             initial={{ y: "110vh", x: `${p.x}vw`, opacity: 0, rotate: 0 }}
@@ -71,7 +71,7 @@ export function FloatingHearts() {
               x: { duration: p.duration, ease: "easeInOut" },
             }}
             onAnimationComplete={() => {
-              setParticles((prev) => prev.filter((pp) => pp.id !== p.id));
+              setParticles((prev: Particle[]) => prev.filter((pp: Particle) => pp.id !== p.id));
             }}
             style={{ fontSize: p.size, position: "absolute" }}
           >
