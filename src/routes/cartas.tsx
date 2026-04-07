@@ -19,62 +19,62 @@ const fotos = [novia1, novia2, novia3, novia4, novia5, novia6, novia7, novia8];
 
 const cartas = [
   {
-    emoji: "💖",
-    title: "Primera Carta",
+    numeral: "I",
+    title: "El Encuentro",
     content:
       "Mi amor, desde el primer momento en que te vi, supe que eras especial. Tu sonrisa iluminó mi mundo de una forma que nunca imaginé posible. Cada día a tu lado es un regalo que atesoro con todo mi corazón. Gracias por existir en mi vida.",
   },
   {
-    emoji: "🌹",
-    title: "Segunda Carta",
+    numeral: "II",
+    title: "Amor Verdadero",
     content:
       "Eres la razón por la que creo en el amor verdadero. Antes de ti, pensaba que esas cosas solo pasaban en las películas, pero tú me demostraste que el amor real es aún más bonito. Te amo con cada fibra de mi ser.",
   },
   {
-    emoji: "💝",
-    title: "Tercera Carta",
+    numeral: "III",
+    title: "Mi Promesa",
     content:
       "Prometo cuidarte, protegerte y amarte en cada momento. En los días buenos y en los difíciles, siempre estaré ahí para ti. Eres mi persona favorita, mi compañera de vida, mi todo.",
   },
   {
-    emoji: "🌟",
-    title: "Cuarta Carta",
+    numeral: "IV",
+    title: "Tus Detalles",
     content:
       "Me encanta cómo me haces reír, cómo me abrazas cuando más lo necesito, cómo me miras con esos ojos llenos de amor. Cada pequeño detalle tuyo me enamora más y más cada día.",
   },
   {
-    emoji: "💕",
-    title: "Quinta Carta",
+    numeral: "V",
+    title: "Mi Paz",
     content:
       "Contigo aprendí que el amor no es perfecto, pero es real. Es despertarse y pensar en ti, es extrañarte cuando no estás, es sentirme completo solo con tu presencia. Tú eres mi paz.",
   },
   {
-    emoji: "💐",
-    title: "Sexta Carta",
+    numeral: "VI",
+    title: "Gratitud",
     content:
       "Gracias por elegirme, por quererme con mis defectos y mis locuras. Gracias por cada abrazo, cada beso, cada 'te quiero'. Eres lo más bonito que me ha pasado en la vida.",
   },
   {
-    emoji: "✨",
-    title: "Séptima Carta",
+    numeral: "VII",
+    title: "Mil Vidas",
     content:
       "Si pudiera pedir un deseo, pediría vivir mil vidas solo para encontrarte en cada una de ellas. No existe un universo donde yo no te ame. Eres mi destino, mi persona, mi hogar.",
   },
   {
-    emoji: "🦋",
-    title: "Octava Carta",
+    numeral: "VIII",
+    title: "Recuerdos",
     content:
       "Cada momento contigo se convierte en mi recuerdo favorito. Las risas, las aventuras, incluso los silencios juntos... todo es perfecto cuando estoy a tu lado. Te amo infinitamente.",
   },
   {
-    emoji: "💗",
-    title: "Novena Carta",
+    numeral: "IX",
+    title: "Latidos",
     content:
       "Eres mi primer pensamiento al despertar y el último antes de dormir. Mi corazón late por ti y para ti. No hay palabras suficientes para describir lo que siento, pero intentaré demostrártelo cada día.",
   },
   {
-    emoji: "👑",
-    title: "Décima Carta",
+    numeral: "X",
+    title: "Eternidad",
     content:
       "Mi reina, mi vida, mi amor eterno. Este es solo el comienzo de nuestra historia. Nos esperan mil aventuras más, mil atardeceres juntos, mil razones para seguir amándonos. Estaremos juntos hoy y por la eternidad. Te amo. ♥",
   },
