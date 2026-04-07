@@ -1,15 +1,4 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".output/public",
-  "functions": {
-    "api/[...].js": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/_server.js"
-    }
-  ]
+  "outputDirectory": ".output/public"
 }
