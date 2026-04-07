@@ -12,7 +12,7 @@ export const Route = createFileRoute("/poemas")({
 const poemas = [
   {
     title: "Te Quiero",
-    author: "Inéditamente para ti",
+    author: "ineditamente tuyo",
     content: `Te quiero como para escuchar tu risa toda la noche y dormir en tu pecho, sin sombras ni fantasmas. Te quiero como para no soltarte jamás; porque sí te quiero es porque sos mi amor, mi cómplice y todo, y en la calle, codo a codo, somos mucho más que dos.`
   },
   {
@@ -69,50 +69,73 @@ El amor es todo y nada,
 es el principio y el fin.`
   },
   {
-    title: "A Glimpse",
-    author: "Walt Whitman",
-    content: `A glimpse through an interstice caught,
-Of a crowd of workmen and drivers in a bar-room around the stove late of a winter night, and I unremark’d seated in a corner,
-Of a youth who loves me and whom I love, silently approaching and seating himself near, that he may hold me by the hand,
-A long while amid the noises of coming and going, of drinking and oath and smutty jest,
-There we two, content, happy in being together, speaking little, perhaps not a word.`
-  },
-  {
-    title: "Bright Star",
-    author: "John Keats",
-    content: `Bright star, would I were stedfast as thou art—
-Not in lone splendour hung aloft the night
-And watching, with eternal lids apart,
-Like nature's patient, sleepless Eremite,
-The moving waters at their priestlike task
-Of pure ablution round earth's human shores,
-Or gazing on the new soft-fallen mask
-Of snow upon the mountains and the moors—
+    title: "Te Miro y Te Quiero",
+    author: "Rubén Darío",
+    content: `Te miro y te quiero,
+te quiero y te miro.
+En tus ojos veo
+mi amor infinito.
 
-No—yet still stedfast, still unchangeable,
-Pillowed upon my fair love's ripening breast,
-To feel for ever its soft fall and swell,
-Awake for ever in a sweet unrest,
-Still, still to hear her tender-taken breath,
-And so live ever—or else swoon to death.`
+Tus labios son rosas
+que besan mi alma,
+tu voz es música
+que me enamora.
+
+Eres mi princesa,
+mi reina, mi diosa,
+eres todo lo bello
+que hay en la vida.
+
+Te amo con locura,
+con pasión ardiente,
+eres mi tesoro,
+mi amor más valiente.`
   },
   {
-    title: "Sonnet 18",
-    author: "William Shakespeare",
-    content: `Shall I compare thee to a summer's day?
-Thou art more lovely and more temperate:
-Rough winds do shake the darling buds of May,
-And summer's lease hath all too short a date;
-Sometime too hot the eye of heaven shines,
-And often is his gold complexion dimm'd;
-And every fair from fair sometime declines,
-By chance or nature's changing course untrimm'd;
-But thy eternal summer shall not fade
-Nor lose possession of that fair thou owest;
-Nor shall Death brag thou wander'st in his shade,
-When in eternal lines to time thou growest:
-So long as men can breathe or eyes can see,
-So long lives this, and this gives life to thee.`
+    title: "Eres Tú",
+    author: "Gustavo Adolfo Bécquer",
+    content: `Eres tú, mi amor, la estrella
+que alumbra mi camino,
+eres tú la primavera
+que alegra mi destino.
+
+Tus ojos son luceros
+que iluminan mi noche,
+tus labios son corales
+que endulzan mi reproche.
+
+Eres tú la armonía
+de mi vida entera,
+eres tú la poesía
+que mi alma venera.
+
+Sin ti no hay alegría,
+sin ti no hay esperanza,
+eres tú mi fortuna,
+mi amor, mi bonanza.`
+  },
+  {
+    title: "Amor Eterno",
+    author: "Sor Juana Inés de la Cruz",
+    content: `Este amor que me consumes,
+este fuego que me abrasa,
+es eterno como el tiempo,
+infinito como el espacio.
+
+Tus ojos son estrellas
+que guían mi camino,
+tus manos son caricias
+que calman mi destino.
+
+Eres tú la melodía
+que alegra mi existencia,
+eres tú la fantasía
+que llena mi conciencia.
+
+Te amo con devoción,
+con pasión infinita,
+eres mi inspiración,
+mi musa bendita.`
   },
   {
     title: "Cómo Te Quiero",
@@ -152,59 +175,48 @@ todo lo último
 de mi vida entera`
   },
   {
-    title: "The Passionate Shepherd to His Love",
-    author: "Christopher Marlowe",
-    content: `Come live with me and be my love,
-And we will all the pleasures prove,
-That Valleys, groves, hills, and fields,
-Woods, or steepy mountain yields.
+    title: "Mi Amor por Ti",
+    author: "Antonio Machado",
+    content: `Mi amor por ti es como el río
+que corre mansamente,
+como el sol que ilumina
+los campos florecientes.
 
-Where we will sit upon the Rocks,
-Seeing the Shepherds feed their flocks,
-By shallow Rivers to whose falls
-Melodious birds sing Madrigals.
+Es como la brisa suave
+que acaricia las flores,
+como el canto del pájaro
+en las mañanas de colores.
 
-And I will make thee beds of Roses
-And a thousand fragrant posies,
-A cap of flowers, and a kirtle
-Embroidered all with leaves of Myrtle;
+Tus ojos son luceros
+que alumbran mi sendero,
+tus labios son promesas
+de amor verdadero.
 
-A gown made of the finest wool
-Which from our pretty Lambs we pull;
-Fair lined slippers for the cold,
-With buckles of the purest gold;
-
-A belt of straw and Ivy buds,
-With Coral clasps and Amber studs:
-And if these pleasures may thee move,
-Come live with me, and be my love.
-
-The Shepherds' Swains shall dance and sing
-For thy delight each May-morning:
-If these delights thy mind may move,
-Then live with me and be my love.`
+Eres tú mi alegría,
+mi paz, mi esperanza,
+eres tú la razón
+de mi dulce confianza.`
   },
   {
-    title: "i carry your heart with me",
-    author: "E.E. Cummings",
-    content: `i carry your heart with me(i carry it in
-my heart)i am never without it(anywhere
-i go you go,my dear;and whatever is done
-by only me is your doing,my darling)
+    title: "Soneto XVII",
+    author: "Pablo Neruda",
+    content: `No te amo como si fueras rosa de sal, topacio
+o flecha de claveles que propagan el fuego:
+te amo como se aman ciertas cosas oscuras,
+secretamente, entre la sombra y el alma.
 
-i fear
-no fate(for you are my fate,my sweet)i want
-no world(for beautiful you are my world,my true)
-and it’s you are whatever a moon has always meant
-and whatever a sun will always sing is you
+Te amo como la planta que no florece y lleva
+dentro de sí, escondida, la luz de aquellas flores,
+y gracias a tu amor vive oscuro en mi cuerpo
+el apretado aroma que ascendió de la tierra.
 
-here is the deepest secret nobody knows
-(here is the root of the root and the bud of the bud
-and the sky of the sky of a tree called life;which grows
-higher than soul can hope or mind can hide)
-and this is the wonder that's keeping the stars apart
+Te amo sin saber cómo, ni cuándo, ni dónde,
+te amo simplemente, sin problemas ni orgullo:
+te amo así porque no sé amar de otra manera,
 
-i carry your heart(i carry it in my heart)`
+sino así de este modo en que no soy ni eres,
+tan cerca que tu mano sobre mi pecho es mía,
+tan cerca que tus ojos se cierran con mi sueño.`
   }
 ];
 

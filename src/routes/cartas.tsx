@@ -21,7 +21,8 @@ export const Route = createFileRoute("/cartas")({
 const fotos = [novia1, novia2, novia3, novia4, novia5, novia6, novia7, novia8];
 
 const cartas = [
-  { numeral: "I", title: "El Encuentro", content: "Mi amor, desde el primer momento en que te vi, supe que eras especial. Tu sonrisa iluminó mi mundo de una forma que nunca imaginé posible. Cada día a tu lado es un regalo que atesoro con todo mi corazón. Gracias por existir en mi vida." },
+  
+  { numeral: "I", title: "El Encuentro", content: "'La luz que iluminó mi oscuridad' así describiria aquel dia de enero, donde por primera vez empecé a hablar contigo " },
   { numeral: "II", title: "Amor Verdadero", content: "Eres la razón por la que creo en el amor verdadero. Antes de ti, pensaba que esas cosas solo pasaban en las películas, pero tú me demostraste que el amor real es aún más bonito. Te amo con cada fibra de mi ser." },
   { numeral: "III", title: "Mi Promesa", content: "Prometo cuidarte, protegerte y amarte en cada momento. En los días buenos y en los difíciles, siempre estaré ahí para ti. Eres mi persona favorita, mi compañera de vida, mi todo." },
   { numeral: "IV", title: "Tus Detalles", content: "Me encanta cómo me haces reír, cómo me abrazas cuando más lo necesito, cómo me miras con esos ojos llenos de amor. Cada pequeño detalle tuyo me enamora más y más cada día." },
