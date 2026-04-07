@@ -55,7 +55,7 @@ function Index() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-2xl">
         <h1 className="text-vintage text-5xl md:text-7xl lg:text-8xl font-bold text-foreground leading-tight mb-4 drop-shadow-lg">
-          Para Mi Novia
+          Cartitas para mi Reina
         </h1>
         <p className="text-body-elegant text-lg md:text-xl text-muted-foreground tracking-widest uppercase mb-8">
           Con todo mi amor ♥
@@ -79,7 +79,7 @@ function Index() {
             to="/poemas"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-gold to-amber-400 text-foreground px-8 py-4 rounded-full text-lg font-display shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 border-2 border-gold/20"
           >
-            📖 Poemas de Amor
+            📖 Mis poemas
           </Link>
         </div>
 
