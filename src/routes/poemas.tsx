@@ -11,6 +11,11 @@ export const Route = createFileRoute("/poemas")({
 
 const poemas = [
   {
+    title: "Te Quiero",
+    author: "Inéditamente para ti",
+    content: `Te quiero como para escuchar tu risa toda la noche y dormir en tu pecho, sin sombras ni fantasmas. Te quiero como para no soltarte jamás; porque sí te quiero es porque sos mi amor, mi cómplice y todo, y en la calle, codo a codo, somos mucho más que dos.`
+  },
+  {
     title: "No Te Vayas",
     author: "Mario Benedetti",
     content: `No te vayas, yo te amo.
@@ -240,7 +245,7 @@ function PoemasPage() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-vintage text-3xl sm:text-4xl md:text-6xl font-bold text-foreground mb-4"
         >
-          Poemas de Amor
+          Poemas para ti
         </motion.h1>
         <motion.div
           initial={{ scaleX: 0 }}

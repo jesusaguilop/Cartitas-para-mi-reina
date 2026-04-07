@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as CartasRouteImport } from './routes/cartas'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as PoemasRouteImport } from './routes/poemas'
 
 const CartasRoute = CartasRouteImport.update({
   id: '/cartas',
@@ -22,31 +23,40 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PoemasRoute = PoemasRouteImport.update({
+  id: '/poemas',
+  path: '/poemas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/cartas': typeof CartasRoute
+  '/poemas': typeof PoemasRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/cartas': typeof CartasRoute
+  '/poemas': typeof PoemasRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/cartas': typeof CartasRoute
+  '/poemas': typeof PoemasRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/cartas'
+  fullPaths: '/' | '/cartas' | '/poemas'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/cartas'
-  id: '__root__' | '/' | '/cartas'
+  to: '/' | '/cartas' | '/poemas'
+  id: '__root__' | '/' | '/cartas' | '/poemas'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CartasRoute: typeof CartasRoute
+  PoemasRoute: typeof PoemasRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -71,6 +81,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CartasRoute: CartasRoute,
+  PoemasRoute: PoemasRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
