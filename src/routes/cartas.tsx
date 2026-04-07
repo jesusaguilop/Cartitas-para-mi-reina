@@ -141,7 +141,9 @@ function CartasPage() {
             >
               <div
                 className="relative w-full cursor-pointer"
-                onClick={() => setFlipped((f) => !f)}
+                onMouseEnter={!isMobile ? () => setFlipped(true) : undefined}
+                onMouseLeave={!isMobile ? () => setFlipped(false) : undefined}
+                onClick={isMobile ? () => setFlipped((f) => !f) : undefined}
                 style={{ minHeight: "320px" }}
               >
                 <motion.div
