@@ -13,6 +13,7 @@ import novia5 from "@/assets/novia-5.png";
 import novia6 from "@/assets/novia-6.png";
 import novia7 from "@/assets/novia-7.png";
 import novia8 from "@/assets/novia-8.png";
+import juntos from "@/assets/juntos.jpeg";
 
 export const Route = createFileRoute("/cartas")({
   component: CartasPage,
@@ -205,7 +206,7 @@ function CartasPage() {
                     style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
                   >
                     <img
-                      src={fotos[openCarta % fotos.length]}
+                      src={openCarta === 9 ? juntos : fotos[openCarta % fotos.length]}
                       alt=""
                       className="w-full h-full object-cover"
                       style={{ minHeight: "320px" }}
