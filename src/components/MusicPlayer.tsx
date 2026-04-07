@@ -1,14 +1,17 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-
-const MUSIC_URL = "https://cdn.pixabay.com/audio/2024/11/28/audio_3a4e213462.mp3";
+import song1 from "../music/Morat - No Se Va.mp3"
+import song2 from "../music/Phillip Phillips - Gone, Gone, Gone.mp3"
+// 🎵 Agrega aquí tus dos canciones
+const SONGS = [song1,song2];
 
 export function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState(false);
+  const [songIndex, setSongIndex] = useState(0);
 
   useEffect(() => {
-    const audio = new Audio(MUSIC_URL);
+    const audio = new Audio(SONGS[0]);
     audio.loop = true;
     audio.volume = 0.3;
     audioRef.current = audio;
@@ -20,11 +23,21 @@ export function MusicPlayer() {
 
   const toggle = () => {
     if (!audioRef.current) return;
+
     if (playing) {
+      // ⏸ Pausa y prepara la SIGUIENTE canción
       audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+
+      const nextIndex = (songIndex + 1) % SONGS.length;
+      audioRef.current.src = SONGS[nextIndex];
+      audioRef.current.load();
+      setSongIndex(nextIndex);
     } else {
+      // ▶ Reproduce la canción que ya está cargada
       audioRef.current.play().catch(() => {});
     }
+
     setPlaying(!playing);
   };
 
@@ -40,19 +53,11 @@ export function MusicPlayer() {
       title={playing ? "Pausar música" : "Reproducir música"}
     >
       {playing ? (
-        <motion.span
-          key="pause"
-          initial={{ rotate: -90, opacity: 0 }}
-          animate={{ rotate: 0, opacity: 1 }}
-        >
+        <motion.span key="pause" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }}>
           ♫
         </motion.span>
       ) : (
-        <motion.span
-          key="play"
-          initial={{ rotate: 90, opacity: 0 }}
-          animate={{ rotate: 0, opacity: 1 }}
-        >
+        <motion.span key="play" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }}>
           ♪
         </motion.span>
       )}
