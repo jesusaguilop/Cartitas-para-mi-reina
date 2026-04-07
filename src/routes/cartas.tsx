@@ -3,6 +3,7 @@ import { useState, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FloatingHearts } from "@/components/FloatingHearts";
 import { MusicPlayer } from "@/components/MusicPlayer";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 import novia1 from "@/assets/novia-1.png";
 import novia2 from "@/assets/novia-2.png";
@@ -35,6 +36,7 @@ const cartas = [
 function CartasPage() {
   const [openCarta, setOpenCarta] = useState<number | null>(null);
   const [flipped, setFlipped] = useState(false);
+  const isMobile = useIsMobile();
   const cartaRef = useRef<HTMLDivElement>(null);
 
   const handleOpenCarta = useCallback((i: number) => {
@@ -190,7 +192,7 @@ function CartasPage() {
                     </motion.p>
 
                     <p className="text-vintage text-xs sm:text-sm text-muted-foreground mt-6 sm:mt-8 opacity-50">
-                      Toca para ver tu foto 💗
+                      {isMobile ? "Toca para ver tu foto 💗" : "Pasa el cursor para ver tu foto 💗"}
                     </p>
                   </div>
 
@@ -214,7 +216,7 @@ function CartasPage() {
                         Te amo 💙
                       </p>
                       <p className="text-body-elegant text-xs sm:text-sm text-white/70 mt-1">
-                        Toca para volver a la carta
+                        {isMobile ? "Toca para volver a la carta" : "Retira el cursor para volver"}
                       </p>
                     </div>
                   </div>
