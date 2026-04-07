@@ -419,11 +419,20 @@ function PoemasPage() {
 
                       <div className="text-vintage text-sm sm:text-base text-white/70 leading-relaxed">
                         <p className="mb-4">
-                          Este poema nos recuerda que el amor verdadero trasciende el tiempo y las palabras.
-                          Cada verso es una declaración de sentimientos eternos.
+                          Entre todas las personas que existen, te elegí a ti… y no por casualidad, sino porque en ti encontré todo lo que mi corazón buscaba sin saberlo.
+
+Eres la única persona que amo de esta manera, la única con la que quiero compartir mi vida, mis días, mis sueños y todo lo que soy. No hay nadie más en mi mente ni en mi corazón… solo tú.
+
+Quiero estar contigo no solo en los momentos buenos, sino en los difíciles, ayudarte cuando lo necesites, entenderte incluso cuando no tengas palabras, y ser ese apoyo que nunca te falle.
+
+No quiero ser alguien pasajero en tu vida… quiero ser tu compañía, tu confianza, tu paz, tu lugar seguro. Quiero construir algo contigo que dure, que crezca, que resista todo.
+
+Porque no se trata solo de amarte… se trata de elegirte todos los días, para toda la vida.
+
+
                         </p>
                         <p>
-                          Que estos versos inspiren tu corazón y te hagan sentir el amor que mereces. 💕
+                          Y eso es exactamente lo que quiero contigo.💕
                         </p>
                       </div>
 
