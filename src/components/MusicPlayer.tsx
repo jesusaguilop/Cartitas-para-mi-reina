@@ -60,7 +60,7 @@ export function MusicPlayer() {
       whileTap={{ scale: 0.9 }}
       className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center text-2xl border-2 border-border"
       aria-label={playing ? "Pausar música" : "Reproducir música"}
-      title={playing ? "Pausar música" : "Reproducir música"}
+      title={playing ? "Pica para cambiar de música" : "Pica para reproducir o cambiar de música"}
     >
       {playing ? (
         <motion.span key="pause" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }}>
