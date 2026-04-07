@@ -5,7 +5,7 @@ import song2 from "../music/Phillip Phillips - Gone, Gone, Gone.mp3"
 import song3 from "../music/A Thousand Years.mp3"
 import song4 from "../music/Mi vida entera.mp3"
 // 🎵 Agrega aquí tus dos canciones
-const SONGS = [song1,song2,song3,song4];
+const SONGS = [song2,song1,song3,song4];
 
 export function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
