@@ -21,7 +21,7 @@ export const Route = createFileRoute("/cartas")({
 const fotos = [novia1, novia2, novia3, novia4, novia5, novia6, novia7, novia8];
 
 const cartas = [
-  
+
   { numeral: "I", title: "El Encuentro", content: "'La luz que iluminó mi oscuridad' así describiria aquel dia de enero, donde por primera vez empecé a hablar contigo " },
   { numeral: "II", title: "Amor Verdadero", content: "Eres la razón por la que creo en el amor verdadero. Antes de ti, pensaba que esas cosas solo pasaban en las películas, pero tú me demostraste que el amor real es aún más bonito. Te amo con cada fibra de mi ser." },
   { numeral: "III", title: "Mi Promesa", content: "Prometo cuidarte, protegerte y amarte en cada momento. En los días buenos y en los difíciles, siempre estaré ahí para ti. Eres mi persona favorita, mi compañera de vida, mi todo." },
@@ -32,6 +32,7 @@ const cartas = [
   { numeral: "VIII", title: "Recuerdos", content: "Cada momento contigo se convierte en mi recuerdo favorito. Las risas, las aventuras, incluso los silencios juntos... todo es perfecto cuando estoy a tu lado. Te amo infinitamente." },
   { numeral: "IX", title: "Latidos", content: "Eres mi primer pensamiento al despertar y el último antes de dormir. Mi corazón late por ti y para ti. No hay palabras suficientes para describir lo que siento, pero intentaré demostrártelo cada día." },
   { numeral: "X", title: "Eternidad", content: "Mi reina, mi vida, mi amor eterno. Este es solo el comienzo de nuestra historia. Nos esperan mil aventuras más, mil atardeceres juntos, mil razones para seguir amándonos. Estaremos juntos hoy y por la eternidad. Te amo. ♥" },
+  { numeral: "XI", title: "Dedicación Eterna", content: "Maldito yo mil veces, si no dedico toda mi vida, toda mi alma y todas mis fuerzas para hacerte feliz" },
 ];
 
 function CartasPage() {
