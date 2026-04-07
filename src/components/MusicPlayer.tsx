@@ -15,6 +15,15 @@ export function MusicPlayer() {
     audio.loop = true;
     audio.volume = 0.3;
     audioRef.current = audio;
+
+    // Intentar reproducir automáticamente al cargar
+    audio.play().then(() => {
+      setPlaying(true);
+    }).catch(() => {
+      // Si falla el auto-play (debido a políticas del navegador), queda en pausa
+      setPlaying(false);
+    });
+
     return () => {
       audio.pause();
       audio.src = "";
