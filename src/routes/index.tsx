@@ -67,12 +67,21 @@ function Index() {
           "Estaremos juntos hoy y por la eternidad..."
         </p>
 
-        <Link
-          to="/cartas"
-          className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-rose-deep text-primary-foreground px-10 py-4 rounded-full text-xl font-display shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
-        >
-          💌 Mis Cartas de Amor
-        </Link>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <Link
+            to="/cartas"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-primary to-rose-deep text-primary-foreground px-8 py-4 rounded-full text-lg font-display shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300"
+          >
+            💌 Mis Cartas de Amor
+          </Link>
+
+          <Link
+            to="/poemas"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-gold to-amber-400 text-foreground px-8 py-4 rounded-full text-lg font-display shadow-xl hover:scale-105 hover:shadow-2xl transition-all duration-300 border-2 border-gold/20"
+          >
+            📖 Poemas de Amor
+          </Link>
+        </div>
 
         <p className="text-body-elegant text-sm text-muted-foreground mt-16">
           Hecho con amor 💕

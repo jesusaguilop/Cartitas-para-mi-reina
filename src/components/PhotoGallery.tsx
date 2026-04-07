@@ -2,12 +2,14 @@ import novia2 from "@/assets/novia-2.png";
 import novia3 from "@/assets/novia-3.png";
 import novia4 from "@/assets/novia-4.png";
 import novia5 from "@/assets/novia-5.png";
+import novia6 from "@/assets/juntos.png";
 
 const photos = [
   { src: novia2, alt: "Mi amor", rotate: "-3deg" },
   { src: novia3, alt: "Mi vida", rotate: "2deg" },
   { src: novia4, alt: "Mi cielo", rotate: "-1deg" },
   { src: novia5, alt: "Mi todo", rotate: "3deg" },
+  { src: novia6, alt: "Nuestros momentos", rotate: "1deg" },
 ];
 
 export function PhotoGallery() {
@@ -21,7 +23,7 @@ export function PhotoGallery() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
           {photos.map((photo, i) => (
-            <div
+            <divs
               key={i}
               className="group relative"
               style={{ transform: `rotate(${photo.rotate})` }}

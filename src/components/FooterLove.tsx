@@ -27,7 +27,7 @@ export function FooterLove() {
           "Te quiero, te amo, y te amaré siempre."
         </p>
         <p className="text-body-elegant text-lg text-muted-foreground">
-          Con todo mi amor, para siempre ♥
+          Con todo mi amor, por la eternidad ♥
         </p>
 
         <div className="mt-12 pt-8 border-t border-border">
