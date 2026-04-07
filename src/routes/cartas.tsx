@@ -32,7 +32,6 @@ const cartas = [
   { numeral: "VIII", title: "Recuerdos", content: "Cada momento contigo se convierte en mi recuerdo favorito. Las risas, las aventuras, incluso los silencios juntos... todo es perfecto cuando estoy a tu lado. Te amo infinitamente." },
   { numeral: "IX", title: "Latidos", content: "Eres mi primer pensamiento al despertar y el último antes de dormir. Mi corazón late por ti y para ti. No hay palabras suficientes para describir lo que siento, pero intentaré demostrártelo cada día." },
   { numeral: "X", title: "Eternidad", content: "Mi reina, mi vida, mi amor eterno. Este es solo el comienzo de nuestra historia. Nos esperan mil aventuras más, mil atardeceres juntos, mil razones para seguir amándonos. Estaremos juntos hoy y por la eternidad. Te amo. ♥" },
-  { numeral: "XI", title: "Dedicación Eterna", content: "Maldito yo mil veces, si no dedico toda mi vida, toda mi alma y todas mis fuerzas para hacerte feliz" },
 ];
 
 function CartasPage() {

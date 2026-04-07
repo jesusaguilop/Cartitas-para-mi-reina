@@ -217,6 +217,11 @@ te amo así porque no sé amar de otra manera,
 sino así de este modo en que no soy ni eres,
 tan cerca que tu mano sobre mi pecho es mía,
 tan cerca que tus ojos se cierran con mi sueño.`
+  },
+  {
+    title: "Dedicación Eterna",
+    author: "Pedro Infante",
+    content: `Maldito yo mil veces, si no dedico toda mi vida, toda mi alma y todas mis fuerzas para hacerte feliz`
   }
 ];
 
