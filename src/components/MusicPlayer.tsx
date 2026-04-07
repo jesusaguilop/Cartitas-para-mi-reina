@@ -3,8 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import song1 from "../music/Morat - No Se Va.mp3"
 import song2 from "../music/Phillip Phillips - Gone, Gone, Gone.mp3"
 import song3 from "../music/A Thousand Years.mp3"
+import song4 from "../music/Morat - Mi Vida Entera (Live) Vevo X.mp3"
 // 🎵 Agrega aquí tus dos canciones
-const SONGS = [song1,song2,song3];
+const SONGS = [song1,song2,song3,song4];
 
 export function MusicPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
