@@ -161,9 +161,10 @@ function devServerFnErrorLogger() {
 }
 
 export default defineConfig(({ command, mode }) => {
-  // Use Cloudflare Workers plugin for builds (produces worker output)
-  // Skip for dev server (command=serve) since workerd runtime isn't available
-  const useCloudflare = command === "build";
+  // Use Cloudflare Workers plugin only when explicitly building for Cloudflare.
+  // Disable this in Vercel or normal static builds to avoid worker-only output.
+  const useCloudflare =
+    command === "build" && process.env.CLOUDFLARE_BUILD === "true";
 
   const env = loadEnv(mode, process.cwd(), "VITE_");
   const envDefine: Record<string, string> = {};
