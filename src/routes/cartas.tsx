@@ -205,11 +205,14 @@ function CartasPage() {
                     className="absolute inset-0 w-full rounded-2xl sm:rounded-3xl overflow-hidden"
                     style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
                   >
-                    <img
-                      src={openCarta === 9 ? juntos : fotos[openCarta % fotos.length]}
-                      alt=""
-                      className="w-full h-full object-cover"
-                      style={{ minHeight: "320px" }}
+                    <div
+                      className="w-full h-full"
+                      style={{
+                        backgroundImage: `url(${openCarta === 9 ? juntos : fotos[openCarta % fotos.length]})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                      }}
                     />
                     <div
                       className="absolute inset-0"
